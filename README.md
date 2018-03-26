@@ -9,16 +9,15 @@ to use the available PHP-Version ins php-basic, you can use the build `ARG` `CON
 ### Env_vars
 Use these Variables for the following Settings:
 
-|ENV_VAR|Setting|
-|---|---|
-|`XDEBUG_DEFAULT_ENABLE`|`xdebug.default_enable`|
-|`XDEBUG_DEFAULT_ENABLE`|`xdebug.default_enable`|
-|`XDEBUG_CLI_ENABLE`|`xdebug.cli_enable`|
-|`XDEBUG_REMOTE_ENABLE`|`xdebug.remote_enable`|
-|`XDEBUG_REMOTE_CONNECT_BACK`|`xdebug.remote_connect_back`|
-|`XDEBUG_REMOTE_AUTOSTART`|`xdebug.remote_autostart`|
-|`XDEBUG_REMOTE_LOG`|`xdebug.remote_log`|
-|`XDEBUG_IDE_KEY`|`xdebug.idekey`|
+|ENV_VAR|Setting|Default Value|
+|---|---|---|
+|`XDEBUG_DEFAULT_ENABLE`|`xdebug.default_enable`|On|
+|`XDEBUG_CLI_ENABLE`|`xdebug.cli_enable`|Off|
+|`XDEBUG_REMOTE_ENABLE`|`xdebug.remote_enable`|On|
+|`XDEBUG_REMOTE_CONNECT_BACK`|`xdebug.remote_connect_back`|Off|
+|`XDEBUG_REMOTE_AUTOSTART`|`xdebug.remote_autostart`|On|
+|`XDEBUG_REMOTE_LOG`|`xdebug.remote_log`|/proc/self/fd/2|
+|`XDEBUG_IDE_KEY`|`xdebug.idekey`|PHPSTORM|
 
 *Note: The setting xebug.remote_host is automatically pointing to the host ip* 
 
