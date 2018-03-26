@@ -8,7 +8,7 @@ RUN docker-php-ext-enable xdebug
 
 COPY ${XDEBUG_INI} $XDEBUG_CONF_FILE
 
-COPY xdebug_local_settings /usr/local/bin/
+COPY local_settings /usr/local/bin/xdebug_local_settings
 
 ENV XDEBUG_CONF_FILE=$XDEBUG_CONF_FILE \
     XDEBUG_IDE_KEY="PHPSTORM" \
