@@ -3,6 +3,9 @@ Extends [php-basic](https://github.com/JHeimbach/php-basic) and adds xdebug
 
 
 ## Settings
+### PHP version
+to use the available PHP-Version ins php-basic, you can use the build `ARG` `CONTAINER_VERSION` to point to a specific version
+
 ### Env_vars
 Use these Variables for the following Settings:
  |ENV_VAR|Setting|

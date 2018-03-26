@@ -1,4 +1,5 @@
-FROM jheimbach/php-basic:latest
+ARG CONTAINER_VERSION=latest
+FROM jheimbach/php-basic:${CONTAINER_VERSION}
 ARG XDEBUG_INI=./xdebug.ini
 ARG XDEBUG_CONF_FILE=$PHP_INI_DIR/conf.d/xdebug.ini
 
