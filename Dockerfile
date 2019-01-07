@@ -16,7 +16,7 @@ ENV XDEBUG_CONF_FILE=$XDEBUG_CONF_FILE \
     XDEBUG_CLI_ENABLE="Off" \
     XDEBUG_REMOTE_ENABLE="On" \
     XDEBUG_REMOTE_CONNECT_BACK="Off" \
-    XDEBUG_REMOTE_AUTOSTART="On"\
-    XDEBUG_REMOTE_LOG="\/proc\/self\/fd\/2"
+    XDEBUG_REMOTE_AUTOSTART="Off"\
+    XDEBUG_REMOTE_LOG="\/var\/log\/xdebug_remote.log"
 
 RUN xdebug_local_settings
