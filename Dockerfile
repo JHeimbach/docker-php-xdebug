@@ -4,7 +4,6 @@ FROM jheimbach/php-pimcore:${CONTAINER_VERSION}
 ARG XDEBUG_INI=./xdebug.ini
 ARG XDEBUG_CONF_FILE=$PHP_INI_DIR/conf.d/xdebug.ini
 
-
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
 
