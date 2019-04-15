@@ -19,7 +19,7 @@ Use these Variables for the following Settings:
 |`XDEBUG_REMOTE_LOG`|`xdebug.remote_log`|/proc/self/fd/2|
 |`XDEBUG_IDE_KEY`|`xdebug.idekey`|PHPSTORM|
 
-*Note: The setting xebug.remote_host is automatically pointing to the host ip* 
+*Note: The setting xebug.remote_host is automatically pointing 172.17.0.1, the default docker host ip. if you need to change this, add a enviroment setting with `XDEBUG_CONFIG: "remote_host=<your.ip.adress>"`*
 
 ### own xdebug.ini
 There is also the build `ARG` `XDEBUG_INI` to point to completely different xdebug.ini

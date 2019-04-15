@@ -1,7 +1,5 @@
 #!/bin/sh
 
-HOST_IP=$(/sbin/ip route|awk '/default/ { print $3 }')
-
 sed -i -e 's/<<XDEBUG_IDE_KEY>>/'${XDEBUG_IDE_KEY}'/g' \
        -e 's/<<XDEBUG_DEFAULT_ENABLE>>/'${XDEBUG_DEFAULT_ENABLE}'/g' \
        -e 's/<<XDEBUG_CLI_ENABLE>>/'${XDEBUG_CLI_ENABLE}'/g' \
@@ -9,5 +7,5 @@ sed -i -e 's/<<XDEBUG_IDE_KEY>>/'${XDEBUG_IDE_KEY}'/g' \
        -e 's/<<XDEBUG_REMOTE_CONNECT_BACK>>/'${XDEBUG_REMOTE_CONNECT_BACK}'/g' \
        -e 's/<<XDEBUG_REMOTE_AUTOSTART>>/'${XDEBUG_REMOTE_AUTOSTART}'/g' \
        -e 's/<<XDEBUG_REMOTE_LOG>>/'${XDEBUG_REMOTE_LOG}'/g' \
-       -e 's/<<HOST_IP>>/'${HOST_IP}'/g' \
+       -e 's/<<HOST_IP>>/'172.17.0.1'/g' \
        $XDEBUG_CONF_FILE
